@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+confluent:
+  consumer:
+    bootstrapServers: localhost:29092
+    groupId: kafka-test
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
